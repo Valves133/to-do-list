@@ -1,6 +1,7 @@
 import express from 'express';
 
 import routes from './routes';
+import './database/mongo';
 
 class App {
   constructor(){
@@ -11,6 +12,7 @@ class App {
   }
   Middleware(){
     this.app.use(express.json());
+
   }
 
   Routes(){
