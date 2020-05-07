@@ -7,8 +7,8 @@ const routes = Router();
 
 routes.post('/task', TaskController.store);
 routes.get('/task', TaskController.show);
-routes.get('/task/:id',checkIdExist, TaskController.index);
-routes.put('/task/:id',checkIdExist, TaskController.update);
-routes.delete('/task/:id',checkIdExist, TaskController.delete);
+routes.get('/task/:id', TaskController.index);
+routes.put('/task/:id', TaskController.update);
+routes.delete('/task/:id', TaskController.delete);
 
 export default routes;

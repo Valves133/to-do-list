@@ -2,6 +2,7 @@ import express from 'express';
 
 import routes from './routes';
 import './database/mongo';
+import cors from 'cors';
 
 class App {
   constructor(){
@@ -12,6 +13,7 @@ class App {
   }
   Middleware(){
     this.app.use(express.json());
+    this.app.use(cors());
 
   }
 
